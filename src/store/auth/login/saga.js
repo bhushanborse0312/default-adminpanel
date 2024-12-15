@@ -74,6 +74,7 @@ function* socialLogin({ payload: { type, history } }) {
     if(response)
     history("/dashboard");
   } catch (error) {
+    console.log("error",error)
     yield put(apiError(error));
   }
 }

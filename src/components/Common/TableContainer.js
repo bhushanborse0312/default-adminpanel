@@ -3,6 +3,10 @@ import { Row, Table, Button, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import {
+  // Column,
+  // Table as ReactTable,
+  // ColumnFiltersState,
+  // FilterFn,
   useReactTable,
   getCoreRowModel,
   getFilteredRowModel,

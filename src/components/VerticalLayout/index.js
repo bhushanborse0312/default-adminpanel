@@ -129,7 +129,6 @@ const Layout = props => {
 
   return (
     <React.Fragment>
-
       <div id="layout-wrapper">
         <Header toggleMenuCallback={toggleMenuCallback} />
         <Sidebar

@@ -58,15 +58,17 @@ const getLayout = (layoutType) => {
 
 const App = () => {
 
+
+  const selectLayoutState = (state) => state.Layout;
   const LayoutProperties = createSelector(
-    (state) => state.Layout,
-    (layout) => ({
-      layoutType: layout.layoutType,
-    })
+    selectLayoutState,
+      (layout) => ({
+        layoutType: layout.layoutType,
+      })
   );
 
-  const {
-    layoutType
+    const {
+      layoutType
   } = useSelector(LayoutProperties);
 
   const Layout = getLayout(layoutType);

@@ -172,9 +172,7 @@
     }
 
     &:hover {
-        // background-color: var(--#{$prefix}header-dark-bg);
-        border-color: var(--#{$prefix}border-color);
-
+        background-color: var(--#{$prefix}header-dark-bg);
     }
 }
 
